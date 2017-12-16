@@ -17,7 +17,7 @@ public class letterGrade {
 			grade ='F';
 		return grade;
 	}
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		Scanner scn=new Scanner(System.in);
 		while(true) {
 			int score;
@@ -30,5 +30,5 @@ public class letterGrade {
 			if(exit.equals("Y"))
 				break;
 		}
-	}
+	}*/
 }

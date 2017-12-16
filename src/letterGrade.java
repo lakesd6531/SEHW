@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class letterGrade {
 	public static char letterGrade(int score) {
@@ -15,5 +16,19 @@ public class letterGrade {
 		else
 			grade ='F';
 		return grade;
+	}
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		while(true) {
+			int score;
+			String exit;
+			System.out.print("請輸入成績:");
+			score=scn.nextInt();
+			System.out.println(score+" transfers the score to a letter grade is "+letterGrade(score));
+			System.out.print("請問是否要結束程式?(Y/N):");
+			exit=scn.next();
+			if(exit.equals("Y"))
+				break;
+		}
 	}
 }
